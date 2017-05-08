@@ -23,13 +23,15 @@ server.listen(PORT, function() {
   // The below statement is triggered (server-side) when a user visits the PORT URL
   //%s just means "substitute here what you put after comma" or something
   console.log("you're cool I suppose");
+  console.log("Server listening on: http://localhost:%s", PORT);
 
 });
 
 server.listen(port2, function() {
 
-  // The below statement is triggered (server-side) when a user visits the PORT URL
+  // The below statement is triggered (server-side) when a user visits the PORT2 URL
   //%s just means "substitute here what you put after comma" or something
   console.log("i don't like ya");
+  console.log("Server listening on: http://localhost:%s", port2);
 
 });
